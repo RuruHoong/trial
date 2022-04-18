@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <link href="https://kineticgraphs.org/css/kg.0.2.1.css" rel="stylesheet" type="text/css">
+    <script src="https://kineticgraphs.org/js/kg.0.2.1.js"></script>
+</head>
+<body>
+
+<div class="kg-container">
+
+params: 
+- {name: mua, value: 5, min: 0, max: 10, round: 1}
+- {name: mub, value: 5, min: 0, max: 10, round: 1}
+- {name: muc, value: 5, min: 0, max: 10, round: 1}
+- {name: mud, value: 5, min: 0, max: 10, round: 1}
+- {name: p1, value: 15500}
+- {name: p2, value: 27000}
+- {name: p3, value: 39500}
+- {name: p4, value: 52000}
+- {name: p5, value: 67500}
+- {name: p6, value: 85000}
+- {name: p7, value: 108000}
+- {name: p8, value: 141000}
+- {name: p9, value: 201000}
+- {name: p10, value: 504500}
+- {name: rawa1, value: 5}
+- {name: rawa2, value: 5}
+- {name: rawa3, value: 5}
+- {name: rawa4, value: 5}
+- {name: rawa5, value: 5}
+- {name: rawa6, value: 5}
+- {name: rawa7, value: 5}
+- {name: rawa8, value: 5}
+- {name: rawa9, value: 5}
+- {name: rawa10, value: 5}
+- {name: rawb1, value: 10}
+- {name: rawb2, value: 5}
+- {name: rawb3, value: 10}
+- {name: rawb4, value: 5}
+- {name: rawb5, value: 10}
+- {name: rawb6, value: 5}
+- {name: rawb7, value: 5}
+- {name: rawb8, value: 10}
+- {name: rawb9, value: 10}
+- {name: rawb10, value: 5}
+- {name: rawc1, value: 1}
+- {name: rawc2, value: 2}
+- {name: rawc3, value: 3}
+- {name: rawc4, value: 4}
+- {name: rawc5, value: 5}
+- {name: rawc6, value: 6}
+- {name: rawc7, value: 7}
+- {name: rawc8, value: 8}
+- {name: rawc9, value: 9}
+- {name: rawc10, value: 10}
+- {name: rawd1, value: 1}
+- {name: rawd2, value: 2}
+- {name: rawd3, value: 3}
+- {name: rawd4, value: 4}
+- {name: rawd5, value: 5}
+- {name: rawd6, value: 6}
+- {name: rawd7, value: 7}
+- {name: rawd8, value: 8}
+- {name: rawd9, value: 9}
+- {name: rawd10, value: 10}
+
+calcs:
+  bigX: (params.p1 + params.p2 + params.p3 + params.p4 + params.p5 + params.p6 + params.p7 + params.p8 + params.p9 + params.p10)
+  a: ((params.mua) / (params.mua + params.mub + params.muc + params.mud)) 
+  b: ((params.mub) / (params.mua + params.mub + params.muc + params.mud)) 
+  c: ((params.muc) / (params.mua + params.mub + params.muc + params.mud)) 
+  d: ((params.mud) / (params.mua + params.mub + params.muc + params.mud)) 
+  a1: ((params.rawa1) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  a2: ((params.rawa2) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  a3: ((params.rawa3) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  a4: ((params.rawa4) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  a5: ((params.rawa5) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  a6: ((params.rawa6) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  a7: ((params.rawa7) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  a8: ((params.rawa8) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  a9: ((params.rawa9) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  a10: ((params.rawa10) / (params.rawa1 + params.rawa2 + params.rawa3 + params.rawa4 + params.rawa5 + params.rawa6 + params.rawa7 + params.rawa8 + params.rawa9 + params.rawa10))
+  b1: ((params.rawb1) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  b2: ((params.rawb2) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  b3: ((params.rawb3) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  b4: ((params.rawb4) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  b5: ((params.rawb5) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  b6: ((params.rawb6) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  b7: ((params.rawb7) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  b8: ((params.rawb8) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  b9: ((params.rawb9) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  b10: ((params.rawb10) / (params.rawb1 + params.rawb2 + params.rawb3 + params.rawb4 + params.rawb5 + params.rawb6 + params.rawb7 + params.rawb8 + params.rawb9 + params.rawb10))
+  c1: ((params.rawc1) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))
+  c2: ((params.rawc2) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))
+  c3: ((params.rawc3) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))
+  c4: ((params.rawc4) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))
+  c5: ((params.rawc5) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))
+  c6: ((params.rawc6) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))
+  c7: ((params.rawc7) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))
+  c8: ((params.rawc8) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))
+  c9: ((params.rawc9) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))
+  c10: ((params.rawc10) / (params.rawc1 + params.rawc2 + params.rawc3 + params.rawc4 + params.rawc5 + params.rawc6 + params.rawc7 + params.rawc8 + params.rawc9 + params.rawc10))  
+  d1: ((params.rawd1) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  d2: ((params.rawd2) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  d3: ((params.rawd3) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  d4: ((params.rawd4) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  d5: ((params.rawd5) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  d6: ((params.rawd6) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  d7: ((params.rawd7) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  d8: ((params.rawd8) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  d9: ((params.rawd9) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  d10: ((params.rawd10) / (params.rawd1 + params.rawd2 + params.rawd3 + params.rawd4 + params.rawd5 + params.rawd6 + params.rawd7 + params.rawd8 + params.rawd9 + params.rawd10))
+  i1: (calcs.a *  calcs.a1 + calcs.b *  calcs.b1 + calcs.c *  calcs.c1 + calcs.d *  calcs.d1) * calcs.bigX
+  i2: (calcs.a *  calcs.a2 + calcs.b *  calcs.b2 + calcs.c *  calcs.c2 + calcs.d *  calcs.d2) * calcs.bigX
+  i3: (calcs.a *  calcs.a3 + calcs.b *  calcs.b3 + calcs.c *  calcs.c3 + calcs.d *  calcs.d3) * calcs.bigX
+  i4: (calcs.a *  calcs.a4 + calcs.b *  calcs.b4 + calcs.c *  calcs.c4 + calcs.d *  calcs.d4) * calcs.bigX
+  i5: (calcs.a *  calcs.a5 + calcs.b *  calcs.b5 + calcs.c *  calcs.c5 + calcs.d *  calcs.d5) * calcs.bigX
+  i6: (calcs.a *  calcs.a6 + calcs.b *  calcs.b6 + calcs.c *  calcs.c6 + calcs.d *  calcs.d6) * calcs.bigX
+  i7: (calcs.a *  calcs.a7 + calcs.b *  calcs.b7 + calcs.c *  calcs.c7 + calcs.d *  calcs.d7) * calcs.bigX
+  i8: (calcs.a *  calcs.a8 + calcs.b *  calcs.b8 + calcs.c *  calcs.c8 + calcs.d *  calcs.d8) * calcs.bigX
+  i9: (calcs.a *  calcs.a9 + calcs.b *  calcs.b9 + calcs.c *  calcs.c9 + calcs.d *  calcs.d9) * calcs.bigX
+  i10: (calcs.a *  calcs.a10 + calcs.b *  calcs.b10 + calcs.c *  calcs.c10 + calcs.d *  calcs.d10) * calcs.bigX
+
+layout:
+  OneGraphPlusSidebar:
+    graph:
+      xAxis:
+        title: Child's Income
+        min: 0
+        max: 300000
+      yAxis:
+        title: Parent's Income
+        max: 300000
+      objects:
+      - Point:
+          coordinates: [params.p1,calcs.i1]
+          color: black
+      - Point:
+          coordinates: [params.p2,calcs.i2]
+          color: black
+      - Point:
+          coordinates: [params.p3,calcs.i3]
+          color: black
+      - Point:
+          coordinates: [params.p4,calcs.i4]
+          color: black
+      - Point:
+          coordinates: [params.p5,calcs.i5]
+          color: black
+      - Point:
+          coordinates: [params.p6,calcs.i6]
+          color: black
+      - Point:
+          coordinates: [params.p7,calcs.i7]
+          color: black
+      - Point:
+          coordinates: [params.p8,calcs.i8]
+          color: black
+      - Point:
+          coordinates: [params.p9,calcs.i9]
+          color: black
+      - Point:
+          coordinates: [params.p10,calcs.i10]
+          color: black
+    
+
+    sidebar: 
+      controls:
+      - title: On a scale from 0 - 10 (0 is not important at all, 10 is very important), how impactful should the role of each of the following traits be on earnings?
+        sliders:
+        - param: mua
+          label: "Genetic Talent"
+        - param: mub
+          label: "Hardwork"
+        - param: muc
+          label: "Education"
+        - param: mud
+          label: "Luck"
+        divs:
+        - html: "` <p> (not to be shown) Rescaled relative weights: <br> Genetic Talent: ${calcs.a.toFixed(2)} <br> Hardwork: ${calcs.b.toFixed(2)} <br> Education: ${calcs.c.toFixed(2)} <br> Luck: ${calcs.d.toFixed(2)}<br> <br> 
+          <b> Child Profile 1</b> <br> Parental income: ${params.p1.toLocaleString('en-US', {style:'currency', currency:'USD'})} (10th percentile) <br> Genetic Talent: ${params.rawa1} <br> Hardwork: ${params.rawb1}<br> Education: ${params.rawc1}<br> Luck: ${params.rawd1} <br><b> Child income: ${calcs.i1.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+     <b> Child Profile 2</b> <br> Parental income: ${params.p2.toLocaleString('en-US', {style:'currency', currency:'USD'})} (20th percentile) <br> Genetic Talent: ${params.rawa2} <br> Hardwork: ${params.rawb2}<br> Education: ${params.rawc2}<br> Luck: ${params.rawd2} <br><b> Child income: ${calcs.i2.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+     <b> Child Profile 3</b> <br> Parental income: ${params.p3.toLocaleString('en-US', {style:'currency', currency:'USD'})} (30th percentile) <br> Genetic Talent: ${params.rawa3} <br> Hardwork: ${params.rawb3}<br> Education: ${params.rawc3}<br> Luck: ${params.rawd3} <br><b> Child income: ${calcs.i3.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+     <b> Child Profile 4</b> <br> Parental income: ${params.p4.toLocaleString('en-US', {style:'currency', currency:'USD'})} (40th percentile) <br> Genetic Talent: ${params.rawa4} <br> Hardwork: ${params.rawb4}<br> Education: ${params.rawc4}<br> Luck: ${params.rawd4} <br><b> Child income: ${calcs.i4.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+     <b> Child Profile 5</b> <br> Parental income: ${params.p5.toLocaleString('en-US', {style:'currency', currency:'USD'})} (50th percentile) <br> Genetic Talent: ${params.rawa5} <br> Hardwork: ${params.rawb5}<br> Education: ${params.rawc5}<br> Luck: ${params.rawd5} <br><b> Child income: ${calcs.i5.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+     <b> Child Profile 6</b> <br> Parental income: ${params.p6.toLocaleString('en-US', {style:'currency', currency:'USD'})} (60th percentile) <br> Genetic Talent: ${params.rawa6} <br> Hardwork: ${params.rawb6}<br> Education: ${params.rawc6}<br> Luck: ${params.rawd6} <br><b> Child income: ${calcs.i6.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+     <b> Child Profile 7</b> <br> Parental income: ${params.p7.toLocaleString('en-US', {style:'currency', currency:'USD'})} (70th percentile) <br> Genetic Talent: ${params.rawa7} <br> Hardwork: ${params.rawb7}<br> Education: ${params.rawc7}<br> Luck: ${params.rawd7} <br><b> Child income: ${calcs.i7.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+     <b> Child Profile 8</b> <br> Parental income: ${params.p8.toLocaleString('en-US', {style:'currency', currency:'USD'})} (80th percentile) <br> Genetic Talent: ${params.rawa8} <br> Hardwork: ${params.rawb8}<br> Education: ${params.rawc8}<br> Luck: ${params.rawd8} <br><b> Child income: ${calcs.i8.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+     <b> Child Profile 9</b> <br> Parental income: ${params.p9.toLocaleString('en-US', {style:'currency', currency:'USD'})} (90th percentile) <br> Genetic Talent: ${params.rawa9} <br> Hardwork: ${params.rawb9}<br> Education: ${params.rawc9}<br> Luck: ${params.rawd9} <br><b> Child income: ${calcs.i9.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+     <b> Child Profile 10</b> <br> Parental income: ${params.p10.toLocaleString('en-US', {style:'currency', currency:'USD'})} (100th percentile) <br> Genetic Talent: ${params.rawa10} <br> Hardwork: ${params.rawb10}<br> Education: ${params.rawc10}<br> Luck: ${params.rawd10} <br><b> Child income: ${calcs.i10.toLocaleString('en-US', {style:'currency', currency:'USD'})} </b> <br>  <br> <br> 
+   </p>`"
+
+    explanation:
+      divs:
+      - html: Insert here
+
+
+</body>
+</html>
